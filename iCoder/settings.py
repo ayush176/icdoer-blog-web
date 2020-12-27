@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'tmnp_+d=jm8#k_=7mev0aoe#9*9!t%b((^a-46u2%wd3l)5zl9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['icoder-blog-web.herokuapp.com']
 
 
 # Application definition
