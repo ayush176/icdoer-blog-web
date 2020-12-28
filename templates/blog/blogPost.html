@@ -36,10 +36,10 @@
   {% endif %}
   {% for comment in comments %}
   <div class="row my-2">
-    <div class="col-md-1">
+    <div class="col-md-1 col-3">
       <img class="rounded mx-auto d-block w-100 pb-1" src="/static/img/userimg.png" alt="user">
     </div>
-    <div class="col-md-11 mt-1"><b>{{comment.user.username}}</b> &nbsp <span
+    <div class="col-md-11 col-9 mt-1"><b>{{comment.user.username}}</b> &nbsp <span
         class="badge badge-secondary ">{{comment.timestamp | naturaltime}}</span>
       <div>{{comment.comment}}</div>
 
@@ -72,10 +72,10 @@
           <div class="replies my-2">
             {% for reply in replyDict|get_val:comment.sno %}
             <div class="row my-2">
-              <div class="col-md-1">
+              <div class="col-md-1 col-3">
                 <img class="rounded mx-auto d-block w-75 my-2 pb-1" src="/static/img/userimg.png" alt="user">
               </div>
-              <div class="col-md-11 mt-1"><b>{{reply.user.username}}</b> &nbsp <span
+              <div class="col-md-11 col-9 mt-1"><b>{{reply.user.username}}</b> &nbsp <span
                   class="badge badge-secondary ">{{reply.timestamp | naturaltime}}</span>
                 <div>{{reply.comment}}</div>
               </div>
